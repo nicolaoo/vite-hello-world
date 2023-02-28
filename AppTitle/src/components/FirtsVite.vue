@@ -34,5 +34,8 @@ export default {
 <style>
 .first-text {
     background-color: cadetblue;
+    border-radius: 15px;
+    padding: 15px;
+    color: darkkhaki;
 }
 </style>
