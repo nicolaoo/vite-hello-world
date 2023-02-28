@@ -1,7 +1,7 @@
 <script >
 
 import HelloWorld from './components/HelloWorld.vue';
-import FirstText from './components/AppTitle.vue';
+import FirstVite from './components/FirtsVite.vue';
 //1. importo il componente 
 
 export default {
@@ -11,7 +11,7 @@ export default {
     }
   },
   components: {
-    AppTitle
+    FirstVite
     //2. registro all'interno export il componente
     // precedentemente importato
   }
@@ -31,7 +31,7 @@ export default {
   <HelloWorld msg="Vite + Vue" />
 
   <!-- 3. utilizzo il componente  -->
-  <AppTitle></AppTitle>
+  <FirstVite></FirstVite>
 </template>
 
 <style scoped>
