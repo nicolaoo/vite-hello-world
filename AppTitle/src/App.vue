@@ -1,8 +1,22 @@
 <script >
-export default {
-  import HelloWorld from './components/HelloWorld.vue'
 
+import HelloWorld from './components/HelloWorld.vue';
+import FirstText from './components/AppTitle.vue';
+//1. importo il componente 
+
+export default {
+  data() {
+    return {
+      name: 'la mia prima pagina su vite'
+    }
+  },
+  components: {
+    AppTitle
+    //2. registro all'interno export il componente
+    // precedentemente importato
+  }
 }
+
 </script>
 
 <template>
@@ -15,6 +29,9 @@ export default {
     </a>
   </div>
   <HelloWorld msg="Vite + Vue" />
+
+  <!-- 3. utilizzo il componente  -->
+  <AppTitle></AppTitle>
 </template>
 
 <style scoped>
